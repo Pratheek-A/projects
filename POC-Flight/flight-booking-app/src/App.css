@@ -1,0 +1,350 @@
+body {
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input,
+.search-container button {
+    width: 10rem;
+    padding: 15px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button{
+  margin-left: 10px;
+  width: 10rem;
+}
+
+.search-container input {
+    width: 200px;
+}
+
+.search-container button {
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #008bff;
+}
+
+/* FlightList.js */
+
+
+.flight-details-box{
+  width: 80%;
+  float: right;
+}
+
+.flight-details{
+  width: 100%;
+  padding: 0px 0 15px 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.flight-info{
+  float: left;
+  width: 100%;
+}
+
+.flight-name-info{
+  float: left;
+  width: 40%;
+}
+
+.flight-name-text{
+  font-weight: 800;
+}
+
+.flight-time-info{
+  float: left;
+  width: 53%;
+}
+
+.dep-time-text, .arr-time-text, .dep-date-text, .arr-date-text{
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.dep-date-text, .arr-date-text{
+  font-size: 12px;
+}
+
+.source, .destination{
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.duration{
+  font-size: 12px;
+  color: #000;
+  font-weight: 800;
+}
+
+.indication p{
+  margin: 0px 1rem;
+}
+
+/* Cabin details */
+
+.cabin-details-box{
+  width: 100%;
+  display: inline-flex;
+  margin: 1rem auto;
+}
+
+.cabin-info{
+  width: 15rem;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.cabin-upper-part, .cabin-lower-part{
+  box-sizing: border-box;
+}
+
+.class-type{
+  font-weight: 700;
+}
+
+.seats-info{
+  font-size: small;
+  font-weight:600;
+  margin: 3rem auto 5rem;
+  width: 40%;
+}
+
+.booking-part{
+  background-color: #CFE1F3;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.booking-btn{
+  font-weight: 700;
+  color:#0056b3;
+}
+
+/* Filter Flights */
+
+.filter-container{
+  background-color: #eff1f4;
+  float: left;
+  width: 30%;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;}
+
+.filter-box-title{
+  padding: 10px;
+}
+
+/* Sidebar */
+
+.sidebar{
+  width: 250px;
+  height: 50%;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0px;
+  position: absolute;
+  border-radius: 5px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+}
+
+.sidebar-header {
+  font-size: 1.5rem;
+  /* margin-bottom: 0px;
+  float: left; */
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  right: 30%;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0px;
+  float: left;
+  position: relative;
+  right: 1rem;
+}
+
+.sidebar-menu li, .submenu li {
+  margin: 15px 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.sidebar-menu li :hover, .submenu li :hover{
+  background-color: #052142;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+  text-decoration: underline;
+}
+
+.submenu, .sort-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  list-style: none;
+  padding: 0px;
+  /* background-color: #fff; */
+  width: 100%;
+  position: relative;
+}
+
+.submenu{
+  left: 1.5rem;
+}
+
+.sort-submenu{
+  left: 0.5rem;
+}
+
+.sort-submenu input{
+  float: left;
+  margin-top: 5px;
+}
+
+.sort-submenu label{
+  position: relative;
+}
+
+
+.open{
+  max-height: 250px;
+  width: 190px;
+  transition: max-height 0.3s ease-in;
+}
+
+.submenu li{
+  /* color: #0056b3; */
+  margin: 10px;
+  padding: 0px;
+}
+
+
+/* Payment */
+
+.payment-header{
+  display: inline-flex;
+  position: relative;
+  background-color: #003b7b;
+  /* 063b74   dae1ea*/
+}
+
+.payment-source-heading, .payment-destination-heading,
+   .payment-airlines-heading{
+  position: relative;
+  left: 2rem;
+  margin: 1rem;
+  color: #dae1ea;
+  text-align: left;
+}
+
+.payment-destination-heading{
+  left: 15rem;
+}
+
+.payment-airlines-heading{
+  left: 27rem;
+}
+
+.payment-source, .payment-destination,
+.payment-airlines, .payment-cabin
+{
+  color: #dae1ea;
+}
+
+
+.passengers-types{
+  text-align: left;
+}
+
+.passengers-types h6{
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.booking-info{
+  opacity: 0.7;
+}
+
+.booking-details{
+  display:inline-flex;
+  width:70%;
+  margin:10px auto;
+  position:relative
+}
+
+.passenger-details{
+  display: inline-flex;
+  /* position: relative;
+  right: 50%; */
+}
+
+.ticket-price{
+  position: absolute;
+  right: 0px;
+}
+
+/* Ticket */
+
+.passenger-info{
+  margin: 20px auto;
+}
+
+.passenger-info-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.field {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.value{
+  flex-grow: 1;
+}
+
+/* footer */
+
+.footer-container{
+    background-color: #074790;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}

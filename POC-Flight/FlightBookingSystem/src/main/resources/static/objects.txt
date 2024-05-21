@@ -1,0 +1,113 @@
+1.{
+   "flightNumber": "IN220",
+   "airLines": "Indigo",
+   "source": "Bengaluru",
+   "destination": "Hyderabad",
+   "departureDateTime": "2024-02-14 13:30:00",
+   "duration" : 3,
+   "bookingsOpen": true,
+   "cabins": [
+       {
+           "classType": "Economy",
+           "totalSeats": 1000,
+           "seatsAvailable": 350,
+           "ticketPrice": 1500
+       },
+       {
+           "classType": "PremiumEconomy",
+           "totalSeats": 500,
+           "seatsAvailable": 140,
+           "ticketPrice": 2000
+       },
+       {
+           "classType": "Business",
+           "totalSeats": 200,
+           "seatsAvailable": 20,
+           "ticketPrice": 2700
+       },
+       {
+           "classType": "First",
+           "totalSeats": 100,
+           "seatsAvailable": 4,
+           "ticketPrice": 4500
+       }
+   ]
+}
+
+***********************************************
+
+2.1.{
+   "flightNumber": "IA330",
+   "airLines": "IndianAirways",
+   "source": "Chennai",
+   "destination": "Mumbai",
+   "departureDateTime": "2024-02-14 08:30:00",
+   "duration" : 3,
+   "bookingsOpen": true,
+   "cabins": [
+       {
+           "classType": "Economy",
+           "totalSeats": 1000,
+           "seatsAvailable": 350,
+           "ticketPrice": 1500
+       },
+       {
+           "classType": "PremiumEconomy",
+           "totalSeats": 500,
+           "seatsAvailable": 140,
+           "ticketPrice": 2000
+       },
+       {
+           "classType": "Business",
+           "totalSeats": 200,
+           "seatsAvailable": 20,
+           "ticketPrice": 2700
+       },
+       {
+           "classType": "First",
+           "totalSeats": 100,
+           "seatsAvailable": 4,
+           "ticketPrice": 4500
+       }
+   ]
+}
+
+**********************************
+
+
+3.1.{
+   "flightNumber": "VJ100",
+   "airLines": "VistaJet",
+   "source": "Delhi",
+   "destination": "Tirupati",
+   "departureDateTime": "2024-02-15 10:45:00",
+   "duration" : 6,
+   "bookingsOpen": true,
+   "cabins": [
+       {
+           "classType": "Economy",
+           "totalSeats": 1200,
+           "seatsAvailable": 200,
+           "ticketPrice": 1500
+       },
+       {
+           "classType": "PremiumEconomy",
+           "totalSeats": 500,
+           "seatsAvailable": 140,
+           "ticketPrice": 2000
+       },
+       {
+           "classType": "Business",
+           "totalSeats": 200,
+           "seatsAvailable": 20,
+           "ticketPrice": 2700
+       },
+       {
+           "classType": "First",
+           "totalSeats": 100,
+           "seatsAvailable": 4,
+           "ticketPrice": 4500
+       }
+   ]
+}
+
